@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Name Last Name - Resume</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+    
+    @media print {
+      body {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .shadow-xl, .shadow-2xl, .shadow-md, .shadow-sm {
+        box-shadow: none !important;
+      }
+      .page-card {
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 bg-white antialiased text-slate-900">
+
+  <div class="max-w-4xl mx-auto space-y-6 page-card">
+
+    <!-- Print / Export Banner -->
+    <div class="no-print flex justify-end mb-2">
+      <button onclick="window.print()" class="inline-flex items-center gap-2 bg-blue-950 hover:bg-blue-900 text-white text-sm font-medium py-2.5 px-4 rounded-xl shadow-md border border-blue-900 transition-all cursor-pointer hover:shadow-lg">
+        <i class="fa-solid fa-print"></i>
+        <span>Print or Save PDF</span>
+      </button>
+    </div>
+
+    <!-- Resume Card Container -->
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-blue-200/80">
+      
+      <!-- Header Banner in Deep Dark Blue -->
+      <header class="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white p-8 sm:p-10 border-b border-blue-900">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          
+          <div>
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white hover:text-blue-200 transition-colors duration-300">First Name Last Name</h1>
+            <p class="text-blue-200 font-medium text-lg mt-1">Professional Profile</p>
+          </div>
+
+          <!-- Contact Details Grid -->
+          <div class="flex flex-col space-y-2.5 text-sm text-blue-100 border-t md:border-t-0 md:border-l border-blue-800/80 pt-4 md:pt-0 md:pl-8">
+            <div class="flex items-center gap-3 group transition-colors hover:text-white cursor-default">
+              <i class="fa-solid fa-location-dot text-blue-300 group-hover:scale-125 group-hover:text-white transition-all duration-200 w-4 text-center"></i>
+              <span>123 Maple Dr., Anywhere, MA 02116</span>
+            </div>
+            <div class="flex items-center gap-3 group transition-colors hover:text-white cursor-default">
+              <i class="fa-solid fa-phone text-blue-300 group-hover:scale-125 group-hover:text-white transition-all duration-200 w-4 text-center"></i>
+              <a href="tel:617-555-1234" class="hover:underline">617-555-1234</a>
+            </div>
+            <div class="flex items-center gap-3 group transition-colors hover:text-white">
+              <i class="fa-solid fa-envelope text-blue-300 group-hover:scale-125 group-hover:text-white transition-all duration-200 w-4 text-center"></i>
+              <a href="mailto:email@email.com" class="hover:underline hover:text-white transition-colors">email@email.com</a>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- Main Body Content -->
+      <div class="p-8 sm:p-10 space-y-10 bg-white">
+
+        <!-- Profile Section -->
+        <section class="space-y-3 group">
+          <div class="flex items-center gap-3 border-b border-blue-200 pb-2 group-hover:border-blue-900 transition-colors duration-300">
+            <div class="p-2 bg-blue-950 text-white rounded-lg group-hover:bg-blue-900 group-hover:scale-105 transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-user text-base"></i>
+            </div>
+            <h2 class="text-xl font-bold text-blue-950 tracking-wide uppercase">Profile</h2>
+          </div>
+          <p class="text-slate-800 leading-relaxed p-3 rounded-xl bg-blue-50/40 hover:bg-blue-50 transition-colors duration-200 border border-blue-100/60">
+            This is where you write what work you'd like to do and what motivates you. This is how you set the tone of your resume. Write what do you most want to the person reading your resume to know.
+          </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="space-y-6 group/sec">
+          <div class="flex items-center gap-3 border-b border-blue-200 pb-2 group-hover/sec:border-blue-900 transition-colors duration-300">
+            <div class="p-2 bg-blue-950 text-white rounded-lg group-hover/sec:bg-blue-900 group-hover/sec:scale-105 transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-briefcase text-base"></i>
+            </div>
+            <h2 class="text-xl font-bold text-blue-950 tracking-wide uppercase">Experience</h2>
+          </div>
+
+          <div class="space-y-6 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-blue-200">
+            
+            <!-- Job Entry 1 -->
+            <div class="relative pl-8 p-5 rounded-xl border border-blue-200/80 bg-blue-50/30 hover:border-blue-900 hover:bg-blue-50 hover:shadow-md transition-all duration-200 group/card">
+              <div class="absolute left-3.5 top-6 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-blue-950 ring-4 ring-white group-hover/card:scale-125 group-hover/card:bg-blue-900 transition-all duration-200"></div>
+              
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <div>
+                  <h3 class="text-lg font-bold text-blue-950 group-hover/card:text-blue-900 transition-colors">Host</h3>
+                  <div class="text-blue-900 font-semibold text-sm">TFI Fridays - Boston, MA</div>
+                </div>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-950 text-white border border-blue-900 group-hover/card:bg-blue-900 transition-colors w-max shadow-sm">
+                  01/2015-06/2017
+                </span>
+              </div>
+
+              <ul class="list-disc list-inside text-slate-800 text-sm space-y-1.5 pt-3">
+                <li class="hover:text-blue-950 transition-colors">Describe the tasks and responsibilities of the job; your accomplishments during your time</li>
+                <li class="hover:text-blue-950 transition-colors">Be specific and use numbers to show growth or accomplishments</li>
+                <li class="hover:text-blue-950 transition-colors">List your jobs in reverse chronological order starting with most recent and working your way back</li>
+                <li class="hover:text-blue-950 transition-colors">Use bullet points, but don't end your sentence with punctuation in the bullet points</li>
+              </ul>
+            </div>
+
+            <!-- Job Entry 2 -->
+            <div class="relative pl-8 p-5 rounded-xl border border-blue-200/80 bg-blue-50/30 hover:border-blue-900 hover:bg-blue-50 hover:shadow-md transition-all duration-200 group/card">
+              <div class="absolute left-3.5 top-6 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-blue-800 ring-4 ring-white group-hover/card:bg-blue-950 group-hover/card:scale-125 transition-all duration-200"></div>
+              
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <div>
+                  <h3 class="text-lg font-bold text-blue-950 group-hover/card:text-blue-900 transition-colors">Food Service Management Intern</h3>
+                  <div class="text-blue-900 font-semibold text-sm">Big Company LLC - Boston, MA</div>
+                </div>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-950 text-white border border-blue-900 group-hover/card:bg-blue-900 transition-colors w-max shadow-sm">
+                  01/2013-12/2014
+                </span>
+              </div>
+
+              <ul class="list-disc list-inside text-slate-800 text-sm space-y-1.5 pt-3">
+                <li class="hover:text-blue-950 transition-colors">Include volunteer or internships that you've had that might be relevant to the job</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="space-y-4 group/edu">
+          <div class="flex items-center gap-3 border-b border-blue-200 pb-2 group-hover/edu:border-blue-900 transition-colors duration-300">
+            <div class="p-2 bg-blue-950 text-white rounded-lg group-hover/edu:bg-blue-900 group-hover/edu:scale-105 transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-graduation-cap text-base"></i>
+            </div>
+            <h2 class="text-xl font-bold text-blue-950 tracking-wide uppercase">Education</h2>
+          </div>
+
+          <div class="bg-blue-50/40 border border-blue-200/80 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-blue-900 hover:shadow-md hover:bg-blue-50 transition-all duration-300 group/card">
+            <div>
+              <h3 class="text-base font-bold text-blue-950 group-hover/card:text-blue-900 transition-colors">Associates Degree: Business Administration</h3>
+              <p class="text-slate-800 text-sm">Roxbury Community College- Boston</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-950 border border-blue-900 text-white group-hover/card:bg-blue-900 transition-all w-max shadow-sm">
+              2015
+            </span>
+          </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="space-y-4 group/int">
+          <div class="flex items-center gap-3 border-b border-blue-200 pb-2 group-hover/int:border-blue-900 transition-colors duration-300">
+            <div class="p-2 bg-blue-950 text-white rounded-lg group-hover/int:bg-blue-900 group-hover/int:scale-105 transition-all duration-300 shadow-sm">
+              <i class="fa-solid fa-heart text-base"></i>
+            </div>
+            <h2 class="text-xl font-bold text-blue-950 tracking-wide uppercase">Interests</h2>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Yoga
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Basketball (Go Celtics!)
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Cooking
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Tea
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Running
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Reading
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-blue-50 text-blue-950 border border-blue-200 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Choir
+            </span>
+            <span class="inline-flex items-center px-3.5 py-2 rounded-xl text-sm font-semibold bg-slate-100 text-slate-800 border border-slate-300 hover:bg-blue-950 hover:text-white hover:border-blue-950 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
+              Other interests you might have that give them an idea of who you are.
+            </span>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
